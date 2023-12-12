@@ -1,0 +1,802 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(90, 90, 90, 0),rgb(255, 255, 255)),url('bg1.jpg');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+/* FONTS */
+
+@font-face {
+    font-family: 'Roundkey';
+    src: url(Roundkey Bold.otf);
+}
+
+@font-face {
+    font-family: 'RoundkeyRegular';
+    src: url(fonts/Roundkey\ Regular.otf);
+}
+
+@font-face {
+    font-family: 'TTNorms';
+    src: url(fonts/TTNorms-Bold.otf);
+}
+
+@font-face {
+    font-family: 'RK Oblique';
+    src: url(fonts/Roundkey\ BoldOblique.otf);
+}
+
+@font-face {
+    font-family: 'RMed';
+    src: url(fonts/Roundkey\ Medium.otf);
+}
+
+
+/* NAVIGATION BARS */
+
+nav {
+    background-color: #181818;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 75px;
+    margin-right: 5%;
+    position: relative;
+}
+
+li::before {
+    content: "";
+    background-color: gray;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    height: 3px;
+    width: 0%;
+    transition: 0.3s ease-in-out;
+}
+
+li:hover::before {
+    content: "";
+    background-color: gray;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    height: 3px;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+ 
+nav a {
+    height: 100%;
+    padding: 20px;
+    text-decoration: none;
+    display: flex;
+    color: #dcdcdc;
+    font-family:'RoundkeyRegular';
+    font-size: 25px;
+}
+
+nav a:hover{
+    color: white;
+}
+
+
+nav .abtIcon {
+    width: 25px;
+   margin-left: 1125px;
+    color: #000;
+    position: absolute;
+    top: 22px;
+}
+ 
+nav .blogIcon {
+    width: 25px;
+   margin-left: 1305px;
+    color: #000;
+    position: absolute;
+    top: 22px;
+}
+
+nav .galleryIcon {
+    width: 25px;
+   margin-left: 1473px;
+    color: #000;
+    position: absolute;
+    top: 22px;
+}
+
+nav .contactIcon {
+    width: 25px;
+   margin-left: 1665px;
+    color: #000;
+    position: absolute;
+     top: 22px;
+}
+
+nav .logo {
+    cursor: pointer;
+    width: 170px;
+    top: 18px;
+    margin-left: 35px;
+    position: absolute;
+}
+
+
+.mypic {
+    width: 680px;
+    position: absolute; 
+    top: 60%; 
+    left: 81%; 
+    transform: translate(-50%, -50%); 
+    -webkit-mask-image: linear-gradient(to top, transparent 0%, white 100%);
+     mask-image: linear-gradient(to top, transparent 0%, white 100%);
+
+}
+
+.name h1 {
+    font-family: 'Roundkey';
+    font-size: 120px;
+    color: #181818;
+    position: absolute;
+    top: 34%;
+    padding-left: 50px;
+}
+
+.name p {
+    font-size: 21px;
+    font-family: 'TTNorms';
+    font-weight: bold;
+    position: absolute;
+    top: 440px;
+    padding-left: 50px;
+    color: #181818;
+}
+
+.description p {
+    font-size: 35px;
+    font-family: 'RoundkeyRegular';
+    position: absolute;
+    top: 54%;
+    padding-left: 50px;
+}
+
+.mysocials1 p {
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 79%;
+    padding-left: 375px;
+}
+
+.mysocials2 p {
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 79%;
+    padding-left: 430px;
+}
+
+.socials img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    padding-right: 970px;
+    align-items: flex-end;
+    height: 78vh;
+}
+
+.socials img:hover {
+    transform: scale(1.1);
+}
+
+
+/* ABOUT PAGE */
+
+.about-page {
+    background-image: none;
+    color: #dddddd;
+    background-image: linear-gradient(rgba(90, 90, 90, 0),rgba(157, 157, 157, 0.262))
+}
+
+.AboutUsPic img {
+    width: 100%;;
+    position: relative;
+    
+  
+}
+
+.Learn h1 {
+    font-family: 'RK Oblique';
+    font-size: 44px;
+    color: #ffffff; 
+    text-stroke: 1px rgb(0, 0, 0);
+    position: absolute;
+    top: 315px;
+    right: 730px;
+}
+
+.firstpic img {
+    position: absolute;
+    width: 350px;
+    top: 45%;
+    left: 10%;
+}
+
+.secondpic img {
+    position: absolute;
+    width: 350px;
+    top: 45%;
+    left: 41%;
+}
+
+.thirdpic img {
+    position: absolute;
+    width: 350px;
+    top: 45%;
+    right: 10%;
+}
+
+.detail1 h1 {
+    font-family: 'RoundkeyRegular';
+    position: absolute;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    bottom: 20%;
+    left: 10.5%;
+    font-weight: 860;
+}
+
+.detail2 h1 {
+    font-family: 'RoundkeyRegular';
+    position: absolute;
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+    bottom: 20%;
+    left: 37%;
+    font-weight: 860;
+}
+
+.detail3 h1 {
+    font-family: 'RoundkeyRegular';
+    position: absolute;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    bottom: 20%;
+    right: 8%;
+    font-weight: 860;
+}
+
+.par1 p{
+    font-family: 'Calibri';
+    position: absolute;
+    color: #373737;
+    font-size: 16px;
+    font-weight: bold;
+    bottom: 3%;
+    left: 11%;
+}
+
+.par2 p{
+    font-family: 'Calibri';
+    position: absolute;
+    color: #373737;
+    font-size: 19px;
+    font-weight: bold;
+    bottom: 9%;
+    left: 40%;
+}
+
+.par3 p{
+    font-family: 'Calibri';
+    position: absolute;
+    color: #373737;
+    font-size: 17px;
+    font-weight: bold;
+    bottom: 5%;
+    right: 8%;
+}
+
+
+
+/* BLOG PAGE */
+
+.blog-page {
+    background-image: none;
+    color: #dddddd;
+    background-image: linear-gradient(rgba(90, 90, 90, 0),rgba(157, 157, 157, 0.262));
+}
+
+.tech h1{
+    font-size: 50px;
+    position: absolute;
+    left: 35%;
+    bottom: 82%;
+    color: #000;
+}
+
+.articles h1{
+    font-size: 50px;
+    position: absolute;
+    left: 48%;
+    bottom: 82%;
+    color: #000;
+}
+
+.box1 p {
+    background-color: #ffffff;
+    color: #000;
+    position: absolute;
+    width: 450px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+    height: 550px;
+    bottom: 15%;
+    left: 9%;
+}
+
+.b1 p{
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 25px;
+    bottom: 43%;
+    left: 13%;
+    position: absolute;
+}
+
+.a1 img {
+    position: absolute;
+    width: 250px;
+    bottom: 50%;
+    left: 14.5%;
+}
+
+.cont1 p{
+    font-family: 'RoundkeyRegular';
+    position: absolute;
+    color: #000;
+    font-size: 14px;
+    left: 11%;
+    bottom: 220px;
+}
+
+.rm1 h2 {
+    position: absolute;
+    font-size: 15px;
+    color: #000;
+    left: 18%;
+    bottom: 150px;
+}
+
+.box2 p {
+    background-color: #ffffff;
+    color: #000;
+    position: absolute;
+    width: 450px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+    height: 550px;
+    bottom: 15%;
+    left: 38%;
+}
+
+.b2 p{
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 25px;
+    bottom: 47%;
+    left: 41%;
+    position: absolute;
+}
+
+.a2 img {
+    position: absolute;
+    width: 250px;
+    bottom: 50%;
+    left: 43%;
+}
+
+.cont2 p{
+    font-family: 'RoundkeyRegular';
+    position: absolute;
+    color: #000;
+    font-size: 13px;
+    left: 40%;
+    bottom: 210px;
+}
+
+.rm2 h2 {
+    position: absolute;
+    font-size: 15px;
+    color: #000;
+    left: 47%;
+    bottom: 150px;
+}
+
+
+
+.box3 p {
+    background-color: #ffffff;
+    color: #000;
+    position: absolute;
+    width: 450px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+    height: 550px;
+    bottom: 15%;
+    right: 10%;
+}
+
+.b3 p{
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 22px;
+    bottom: 43%;
+    left: 70%;
+    position: absolute;
+}
+
+.a3 img {
+    position: absolute;
+    width: 250px;
+    bottom: 50%;
+    left: 71%;
+}
+
+.cont3 p{
+    font-family: 'RoundkeyRegular';
+    position: absolute;
+    color: #000;
+    font-size: 14px;
+    left: 68.2%;
+    bottom: 240px;
+}
+
+.rm3 h2 {
+    position: absolute;
+    font-size: 15px;
+    color: #000;
+    left: 79%;
+    bottom: 150px;
+}
+
+.ref h1{
+    bottom: 9%;
+    color: #000;
+    position: absolute;
+    left: 2%;
+    font-size: 25px;
+}
+
+.line h1{
+    background-color: #000;
+    position: absolute;
+    width: 95%;
+    height: 2px;
+    bottom: 8%;
+    left: 2%;
+}
+
+
+.ref1 {
+    font-family: 'Calibri';
+    color: #000;
+    position: absolute;
+    left: 2%;
+    font-size: 14px;
+    bottom: 50px;
+}
+
+
+.ref2 {
+    font-family: 'Calibri';
+    color: #000;
+    font-size: 13px;
+    position: absolute;
+    left: 2%;
+    font-size: 14px;
+    bottom: 30px;
+}
+
+.ref3 {
+    font-family: 'Calibri';
+    color: #000;
+    font-size: 13px;
+    position: absolute;
+    left: 2%;
+    font-size: 14px;
+    bottom: 10px;
+}
+
+
+/* GALLERY PAGE */
+
+.gallery-page {
+    background-image: none;
+    color: #dddddd;
+    background-image: linear-gradient(rgba(90, 90, 90, 0),rgba(157, 157, 157, 0.262));
+}
+
+
+.galText p {
+    font-family: 'RMed';
+    color: #000;
+    font-size: 150px;
+    position: absolute;
+    left: 14%;
+    top: 10%;
+}
+
+.galDetail p{
+    font-family: 'Calibri';
+    color: #000;
+    position: absolute;
+    top: 28%;
+    left: 15%;
+    font-size: 21px;
+}
+
+.toolsUsed h1{
+    font-family: 'Roundkey';
+    color: #000;
+    position: absolute;
+    top: 75%;
+    left: 19%;
+}
+
+.il img{
+    position: absolute;
+    width: 36px;
+    bottom: 17%;
+    left: 415px;
+}
+
+.ps img{
+    position: absolute;
+    width: 36px;
+    bottom: 17%;
+    left: 370px;
+}
+
+.ps img:hover {
+    transform: scale(1.1);
+}
+
+.il img:hover {
+    transform: scale(1.1);
+}
+
+.gal1 img{
+    position: absolute;
+    width: 380px;
+    right: 35%;
+    top: 13%;
+}
+
+.gal2 img{
+    position: absolute;
+    width: 500px;
+    right: 6%;
+    top: 13%;
+}
+
+.gal3 img{
+    position: absolute;
+    width: 460px;
+    right: 31%;
+    top: 55%;
+}
+
+.gal4 img{
+    position: absolute;
+    width: 400px;
+    right: 6%;
+    top: 49%;
+}
+
+.gal1 img:hover {
+    transform: scale(1.1);
+}
+
+.gal2 img:hover {
+    transform: scale(1.1);
+}
+
+.gal3 img:hover {
+    transform: scale(1.1);
+}
+
+.gal4 img:hover {
+    transform: scale(1.1);
+}
+
+
+/* CONTACT PAGE */
+
+.contact-page {
+    background-image: none;
+    color: #dddddd;
+    background-image: linear-gradient(rgba(90, 90, 90, 0),rgba(157, 157, 157, 0.262));
+}
+
+.ContText p{
+    color: #000;
+    font-family: 'RMed';
+    font-size: 70px;
+    position: absolute;
+    top: 13%;
+    left: 45%;
+}
+
+.welc p{
+    color: rgba(0, 0, 0, 0.521);
+    font-family: 'RoundkeyRegular';
+    position: absolute;
+    font-size: 27px;
+    top: 24%;
+    left: 33%;
+}
+
+.con1 img {
+    width: 65px;
+    position: absolute;;
+    bottom: 47%;
+    left: 19.5%;
+}
+
+.con2 img {
+    width: 40px;
+    position: absolute;;
+    bottom: 47%;
+    left: 50%;
+}
+
+.con3 img {
+    width: 50px;
+    position: absolute;
+    bottom: 45%;
+    right: 20%;
+}
+
+.con1Text p{
+    font-size: 23px;
+    font-family: 'RoundkeyRegular';
+    color: rgba(0, 0, 0, 0.521);
+    position: absolute;
+    bottom: 37%;
+    left: 17%;
+    text-align: center;
+}
+
+.con2Text p{
+    font-size: 23px;
+    font-family: 'RoundkeyRegular';
+    color: rgba(0, 0, 0, 0.521);
+    position: absolute;
+    bottom: 37%;
+    left: 47%;
+    text-align: center;
+}
+
+.con3Text p{
+    font-size: 23px;
+    font-family: 'RoundkeyRegular';
+    color: rgba(0, 0, 0, 0.521);
+    position: absolute;
+    bottom: 40%;
+    right: 15%;
+    text-align: center;
+}
+
+.consocials img {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.consocials {
+    display: flex;
+   position: absolute;
+    padding-right: 650px;
+    align-items: flex-end;
+    bottom: 10%;
+    left: 45%;
+}
+
+.consocials img:hover {
+    transform: scale(1.1);
+}
+
+.mysocials3 p {
+    color: #000;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 81%;
+    left: 46.5%;
+}
+
+.mysocials4 p {
+    color: #000;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 81%;
+    left: 49%;
+
+}
+
+
+
+
+/* LINES FOR EACH PAGES */
+
+.lineAbout h1{
+    background-color: #666666;
+    position: absolute;
+    width: 90px;
+    height: 3px;
+    top: 62px;
+    left: 1124px;
+}
+
+.lineBlog h1{
+    background-color: #666666;
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    top: 62px;
+    left: 1305px;
+}
+
+.lineGallery h1{
+    background-color: #666666;
+    position: absolute;
+    width: 103px;
+    height: 3px;
+    top: 62px;
+    left: 1476px;
+}
+
+.lineContact h1{
+    background-color: #666666;
+    position: absolute;
+    width: 103px;
+    height: 3px;
+    top: 62px;
+    left: 1670px;
+}
+
